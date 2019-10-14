@@ -1,0 +1,157 @@
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Ok"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        local:MvxBind="Click EntrarCommand" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="25sp"
+        local:MvxBind="Text TelefoneUsuario"
+        android:textStyle="bold"
+        local:layout_constraintEnd_toEndOf="parent"
+        local:layout_constraintHorizontal_bias="0.505"
+        local:layout_constraintStart_toStartOf="parent"
+        local:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="25sp"
+        local:MvxBind="Text StatusUsuario"
+        android:textStyle="bold"
+        local:layout_constraintEnd_toEndOf="parent"
+        local:layout_constraintHorizontal_bias="0.505"
+        local:layout_constraintStart_toStartOf="parent"
+        local:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="25sp"
+        local:MvxBind="Text DataNascimentoUsuario"
+        android:textStyle="bold"
+        local:layout_constraintEnd_toEndOf="parent"
+        local:layout_constraintHorizontal_bias="0.505"
+        local:layout_constraintStart_toStartOf="parent"
+        local:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="25sp"
+        local:MvxBind="Text NomeUsuario"
+        android:textStyle="bold"
+        local:layout_constraintEnd_toEndOf="parent"
+        local:layout_constraintHorizontal_bias="0.505"
+        local:layout_constraintStart_toStartOf="parent"
+        local:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Nome"
+        android:textSize="13sp"
+        local:layout_constraintEnd_toEndOf="parent"
+        local:layout_constraintHorizontal_bias="0.138"
+        local:layout_constraintStart_toStartOf="parent"
+        local:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:text="Nome" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Data de Narscimento"
+        android:textSize="13sp"
+        local:layout_constraintEnd_toEndOf="parent"
+        local:layout_constraintHorizontal_bias="0.186"
+        local:layout_constraintStart_toStartOf="parent"
+        local:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:text="Data de Narscimento" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Telefone"
+        android:textSize="13sp"
+        local:layout_constraintEnd_toEndOf="parent"
+        local:layout_constraintHorizontal_bias="0.145"
+        local:layout_constraintStart_toStartOf="parent"
+        local:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:text="Telefone" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Status do Processo"
+        android:textSize="13sp"
+        local:layout_constraintEnd_toEndOf="parent"
+        local:layout_constraintHorizontal_bias="0.179"
+        local:layout_constraintStart_toStartOf="parent"
+        local:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:text="Status do Processo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="134dp"
+        android:layout_height="101dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        local:layout_constraintEnd_toEndOf="parent"
+        local:layout_constraintHorizontal_bias="0.196"
+        local:layout_constraintStart_toStartOf="parent"
+        local:layout_constraintTop_toTopOf="parent"
+        local:srcCompat="@android:color/background_dark" />
+
+</android.support.constraint.ConstraintLayout>
